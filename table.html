@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/jquery.datetimepicker.css"> 
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"> B & B </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="table.html">
+                            <span class="glyphicon glyphicon-th-list"></span> Table
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--  domyślną wartością atrybutu method jest GET -->
+                    <form class="navbar-form navbar-right" action="search.html" method="GET">
+                        <div class="form-group">
+                            <input type="text" name="search-text" class="form-control" placeholder="Search...">
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span> Search
+                        </button>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container">
+            <h1>Your staff list</h1>
+            <h4>Select number of Rows</h4>
+            <div class="no-rows">
+                <select name="state" id="maxRows" class="control" style="width:150px;">
+                    <option value="1000">Show All</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+
+            <table id="mytable" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th id="id-header">Id</th>
+                        <th id="fn-header">First Name</th>
+                        <th id="ln-header">Last Name</th>
+                        <th id="dob-header">Date Of Birth</th>
+                        <th id="func-header">Function</th>
+                        <th id="exp-header">Experience</th>
+                    </tr>
+<!--
+                    <tr class="filter">
+                        <th id="id-filter"><input type="text"></th>
+                        <th id="fs-filter"><input type="text"></th>
+                        <th id="ls-filter"><input type="text"></th>
+                        <th id="dob-filter"><input type="text"></th>
+                        <th id="func-filter"><input type="text"></th>
+                        <th id="exp-filter"><input type="text"></th>
+                    </tr>
+-->
+                </thead>
+                <tbody id="tbody-staff">
+                </tbody>
+            </table>
+            <div class="pagination-container">
+                <nav>
+                    <ul class="pagination"></ul>
+                </nav>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/table.js"></script>
+        <script src="js/jquery.datetimepicker.full.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

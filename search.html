@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                                                                                            class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">B & B </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse"
+                     id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="table.html"> <span
+                                                        class="glyphicon glyphicon-th-list"></span> Table
+                            </a></li>
+                    </ul>
+                    <!--  domyślną wartością atrybutu method jest GET -->
+                    <form class="navbar-form navbar-right" action="search.html"
+                          method="GET">
+                        <div class="form-group">
+                            <input type="text" name="search-text" class="form-control"
+                                   placeholder="Search...">
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span> Search
+                        </button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="container">
+            <div class="alert alert-success" role="alert" id="alert-success"style="display: none">
+                <span class="glyphicon glyphicon-ok"></span> Results
+            </div>
+            <div class="alert alert-warning" role="alert" id="alert-warning" style="display: none">
+                <span class="glyphicon glyphicon-remove"></span> Not found results!
+            </div>
+            <div id="founded-persons"></div>
+        </div>
+
+        <div class="panel panel-default" style="display: none"
+             id="template-founded-person">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="firstName-lastName"></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <dl class="dl-horizontal" style="margin-bottom: 0;">
+                            <dt>Date Of Birth</dt>
+                            <dd class="dOb"></dd>
+                            <dt>Function</dt>
+                            <dd class="function"></dd>
+                            <dt>Experience Level</dt>
+                            <dd class="experience"></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+                src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>
