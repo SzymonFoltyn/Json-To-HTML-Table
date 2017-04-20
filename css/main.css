@@ -4,7 +4,7 @@
 
 }
 header{
-    background: url(/img/bcg.jpg), center;
+    background: url(../img/bcg.jpg), center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
