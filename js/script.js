@@ -1,4 +1,3 @@
-
 var staff = [];
 $.getJSON('data/sluzba.json', function(data) {
     data.sort(function (a, b) {

@@ -28,3 +28,9 @@ table button:hover {
 tbody, th {
     text-align: center;
 }
+
+.tr-1 th:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: coral;
+}
